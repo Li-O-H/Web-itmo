@@ -1,10 +1,145 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+    <title>Леон Галстян M33011</title>
+    <meta name="description" content="Рассказывает обо мне, о моих профессиональных навыках и увлечениях.">
+    <meta name="keywords" content="Леон, Галстян, IT, программирование, студент">
+    <link rel="stylesheet" href="CSS/outlines.css">
+</head>
 <body>
+<header>
+    <nav>
+        <a href="#about me">Обо мне</a> | <a href="#education">Образование</a> | <a href="#skills">Навыки</a> |
+        <a href="#hobbies">Увлечения</a> | <a href="#contacts">Контакты</a>
+    </nav>
+    <h1>Личная страница Леона Галстяна</h1>
+</header>
+<main>
+    <p id="about me">Приветствую на моей странице! Расскажу немного о себе. Я студент Университета ИТМО, будущий
+        программист и просто <strong>замечательный человек</strong>.</p>
+    <section id="education">
+        <h2>Образование</h2>
+        <div>
+            <h3>Среднее образование</h3>
+            <p>Лицей №101, Санкт-Петербург (2008-2019)</p>
+        </div>
+        <div>
+            <h3>Высшее образование</h3>
+            <p>Университет ИТМО, факультет Информационных технологий и программирования, Санкт-Петербург (2019-2023)</p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Мои навыки</h2>
+        <aside style="float: right; width: 200px">
+            <h3>Примеры работ</h3>
+            <ul>
+                <li><a href="https://github.com/Li-O-H/PaymentsCalendar">Платежный календарь</a> - программа на Python,
+                    являющаяся прослойкой между Excel-таблицами и БД postgres
+                </li>
+                <li><a href="https://github.com/itmo-java-basics-2021/Li-O-H">Key-value хранилище</a> на Java (учебный
+                    проект по Технологиям программирования)
+                </li>
+                <li><a href="https://github.com/Li-O-H/CG-G">Обработка изображений</a> на C++ (учебные проекты по
+                    Компьютерной геометрии и графике).
+                    <del>Осторожно, говнокод</del>
+                </li>
+            </ul>
+        </aside>
+        <section style="overflow: hidden">
+            <h3>Профессиональные навыки</h3>
+            <div>
+                <h4>Python</h4>
+                <pre><code>
+print("Hello, World!")
+                </code></pre>
+                <p>Знаю неплохо, но не особо люблю</p>
+            </div>
+            <div>
+                <h4>C++</h4>
+                <pre><code>
+#include &lt;iostream&gt;
+using namespace std;
 
-<h1>Web</h1>
-
-<p>Галстян Леон, группа М33011.</p>
-
+int main()
+{
+    cout << "Hello, World!";
+    return 0;
+}
+                </code></pre>
+                <p>Знаю неплохо, не понимаю, чего его все так не любят</p>
+            </div>
+            <div>
+                <h4>Java</h4>
+                <pre><code>
+class HelloWorld {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}                </code></pre>
+                <p>Знаю похуже, однако планирую это исправлять</p>
+            </div>
+            <div>
+                <h4>SQL</h4>
+                <p>Без БД не обойтись</p>
+            </div>
+            <div>
+                <h4>Bash</h4>
+                <p>Работал с ним, когда проходил ОС, и впереди Администрирование Linux</p>
+            </div>
+        </section>
+        <section style="clear: both">
+            <h3>Языки</h3>
+            <div>
+                <h4>Русский</h4>
+                <p>Являюсь его носителем</p>
+                <blockquote>Прекрасный наш язык под пером писателей неучёных и неискусных быстро клонится к падению.
+                    Слова искажаются<br>
+                    <cite>А.С.Пушкин</cite>
+                </blockquote>
+            </div>
+            <div>
+                <h4>English</h4>
+                <p>C2 level</p>
+                <blockquote>The English language was carefully, carefully cobbled together by three blind dudes and a
+                    German dictionary<br>
+                    <cite>Dave Kellett</cite>
+                </blockquote>
+            </div>
+        </section>
+        <section id="hobbies">
+            <h2>Мои увлечения</h2>
+            <ul>
+                <li>Спорт
+                    <ol>
+                        <li>Футбол</li>
+                        <li>Волейбол</li>
+                        <li>Настольный теннис</li>
+                    </ol>
+                </li>
+                <li>Физика и математика (a+b)<sup>2</sup>≠a<sup>2</sup>+b<sup>2</sup></li>
+                <li>Кино</li>
+            </ul>
+        </section>
+    </section>
+</main>
+<footer>
+    <section style="float: right; width: 350px">
+        <pre>
+    _____        _____        _____
+   /     \      /     \      /     \
+© <  Li   >----<   O   >----<   H   >
+   \_____/      \_____/      \_____/
+        </pre>
+    </section>
+    <section id="contacts" style="overflow: hidden">
+        <h2>Контакты</h2>
+        <ul>
+            <li><a href="https://vk.com/li_o_h">ВКонтакте</a></li>
+            <li><a href="https://tlgg.ru/Li_O_H">Telegram</a></li>
+            <li>leon25022002@gmail.com</li>
+        </ul>
+    </section>
+</footer>
 </body>
 </html>
