@@ -1,0 +1,204 @@
+body{
+    margin: 0;
+    background: bisque;
+}
+
+header{
+    position: sticky;
+    top: 0;
+    background: lightseagreen;
+    padding-top: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    border-radius: 0 0 20px 20px;
+    box-shadow: rgba(0,0,0,0.5) 0 0 10px 10px;
+}
+
+main{
+    padding: 20px 40px;
+}
+
+footer{
+    background: lightseagreen;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-top: 20px;
+    border-radius: 20px 20px 0 0;
+}
+
+p, li{
+    font-family: Verdana, serif;
+}
+
+nav{
+    background: lightseagreen;
+    color: azure;
+    font-size: 24px;
+}
+
+nav *{
+    background: lightseagreen;
+    color: inherit;
+    font-size: 24px;
+    text-decoration: none;
+}
+
+#page_title{
+    background: lightseagreen;
+    font-size: 30px;
+    text-transform: uppercase;
+    margin-top: 8px;
+    color: azure;
+}
+
+#my_photo{
+    border-radius: 5px;
+    border: 5px solid lightseagreen;
+    float: right;
+    width: 150px;
+}
+
+#about_me{
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+ul{
+    list-style-type: circle;
+}
+
+h1{
+    font-family: "Century Schoolbook", serif;
+}
+
+h2{
+    font-family: "Century Schoolbook", serif;
+    width: fit-content;
+    color: lightseagreen;
+    font-size: 30px;
+    margin: 0;
+}
+
+h3{
+    font-family: "Century Schoolbook", serif;
+    font-size: 22px;
+    margin-left: 5px;
+}
+
+h4{
+    font-family: "Century Schoolbook", serif;
+    font-size: 18px;
+    color: lightseagreen;
+}
+
+a[href]:hover{
+    background-color: cadetblue;
+}
+
+#about_me, #education, #skills, #hobbies, #contacts{
+    scroll-margin-top: 160px;
+}
+
+#education, #skills, #hobbies{
+    background-color: azure;
+    margin-bottom: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#education div div{
+    margin-left: 10px;
+}
+
+#itmo_logo{
+    float: left;
+    margin-right: 20px;
+    border: 2px solid lightseagreen;
+}
+
+.code{
+    background-color: #2b2b2b;
+    width: fit-content;
+    color: #a8a8a8;
+    padding: 10px;
+    border: 2px solid lightseagreen;
+}
+
+.code code{
+    background-color: inherit;
+}
+
+section *{
+    background-color: inherit;
+}
+
+footer *{
+    background: inherit;
+    color: azure;
+}
+
+#contacts a{
+    text-decoration: none;
+}
+
+#languages{
+    border-top: lightseagreen dashed 4px;
+    clear: both;
+}
+
+.language{
+    margin-left: 10px;
+}
+
+#examples{
+    float: right;
+    width: 200px;
+    margin-left: 30px;
+}
+
+#examples ul{
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+#examples ul li a{
+    color: black;
+    text-decoration-color: lightseagreen;
+}
+
+#hard_skills{
+    overflow: hidden;
+    border-right: lightseagreen dashed 4px;
+    padding-right: 30px;
+}
+
+.hard_skill{
+    margin-left: 10px;
+}
+
+del{
+    text-decoration-color: lightseagreen;
+    text-decoration-thickness: 4px;
+}
+
+blockquote{
+    font-family: Corbel, serif;
+    border-bottom: 3px dotted lightseagreen;
+    border-top: 3px dotted lightseagreen;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 1.45;
+    text-align: center;
+    background-color: #dddde8;
+}
+
+cite{
+    text-align: right;
+}
+
+#ascii_picture{
+    float: right;
+    width: 260px;
+}

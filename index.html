@@ -5,33 +5,45 @@
     <title>Леон Галстян M33011</title>
     <meta name="description" content="Рассказывает обо мне, о моих профессиональных навыках и увлечениях.">
     <meta name="keywords" content="Леон, Галстян, IT, программирование, студент">
-    <link rel="stylesheet" href="CSS/outlines.css">
+    <link rel="stylesheet" href="CSS/my_styles.css">
 </head>
 <body>
 <header>
     <nav>
-        <a href="#about me">Обо мне</a> | <a href="#education">Образование</a> | <a href="#skills">Навыки</a> |
-        <a href="#hobbies">Увлечения</a> | <a href="#contacts">Контакты</a>
+        <a href="#about_me">&ensp;Обо мне&ensp;</a>|<a href="#education">&ensp;Образование&ensp;</a>|<a href="#skills">&ensp;Навыки&ensp;</a>|<a
+            href="#hobbies">&ensp;Увлечения&ensp;</a>|<a href="#contacts">&ensp;Контакты&ensp;</a>
     </nav>
-    <h1>Личная страница Леона Галстяна</h1>
+    <h1 id="page_title">Личная страница Леона Галстяна</h1>
 </header>
 <main>
-    <p id="about me">Приветствую на моей странице! Расскажу немного о себе. Я студент Университета ИТМО, будущий
-        программист и просто <strong>замечательный человек</strong>.</p>
+    <section id="about_me">
+        <img id="my_photo" src="Resources/my_photo.jpg" alt="Мое фото">
+        <p>Приветствую на моей странице!</p>
+        <p>Расскажу немного о себе. Я студент Университета ИТМО, будущий
+            программист и просто <strong>замечательный человек</strong>. Заинтересовал? Дальше - больше!</p>
+        <div style="clear: both"></div>
+    </section>
     <section id="education">
         <h2>Образование</h2>
         <div>
             <h3>Среднее образование</h3>
-            <p>Лицей №101, Санкт-Петербург (2008-2019)</p>
+            <div>
+                <p>Лицей №101, Санкт-Петербург (2008-2019)</p>
+            </div>
         </div>
         <div>
             <h3>Высшее образование</h3>
-            <p>Университет ИТМО, факультет Информационных технологий и программирования, Санкт-Петербург (2019-2023)</p>
+            <div>
+                <img id="itmo_logo" src="Resources/itmo_logo.png" height="50px" alt="itmo_logo">
+                <p>Университет ИТМО, факультет Информационных технологий и программирования, Санкт-Петербург (2019-2023)
+                    (aka Первый Неклассический, или Институт Теплых Мужских Отношений)</p>
+                <div style="clear: both"></div>
+            </div>
         </div>
     </section>
     <section id="skills">
         <h2>Мои навыки</h2>
-        <aside style="float: right; width: 200px">
+        <aside id="examples">
             <h3>Примеры работ</h3>
             <ul>
                 <li><a href="https://github.com/Li-O-H/PaymentsCalendar">Платежный календарь</a> - программа на Python,
@@ -46,18 +58,18 @@
                 </li>
             </ul>
         </aside>
-        <section style="overflow: hidden">
+        <section id="hard_skills">
             <h3>Профессиональные навыки</h3>
-            <div>
+            <div class="hard_skill">
                 <h4>Python</h4>
-                <pre><code>
+                <pre class="code"><code>
 print("Hello, World!")
-                </code></pre>
+</code></pre>
                 <p>Знаю неплохо, но не особо люблю</p>
             </div>
-            <div>
+            <div class="hard_skill">
                 <h4>C++</h4>
-                <pre><code>
+                <pre class="code"><code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -66,79 +78,79 @@ int main()
     cout << "Hello, World!";
     return 0;
 }
-                </code></pre>
+</code></pre>
                 <p>Знаю неплохо, не понимаю, чего его все так не любят</p>
             </div>
-            <div>
+            <div class="hard_skill">
                 <h4>Java</h4>
-                <pre><code>
+                <pre class="code"><code>
 class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
-}                </code></pre>
+}
+</code></pre>
                 <p>Знаю похуже, однако планирую это исправлять</p>
             </div>
-            <div>
+            <div class="hard_skill">
                 <h4>SQL</h4>
                 <p>Без БД не обойтись</p>
             </div>
-            <div>
+            <div class="hard_skill">
                 <h4>Bash</h4>
                 <p>Работал с ним, когда проходил ОС, и впереди Администрирование Linux</p>
             </div>
+            <br>
         </section>
-        <section style="clear: both">
+        <section id="languages">
             <h3>Языки</h3>
-            <div>
-                <h4>Русский</h4>
+            <div class="language">
+                <h4>Русский <img src="Resources/RU.png" height="25px" alt="RU"></h4>
                 <p>Являюсь его носителем</p>
-                <blockquote>Прекрасный наш язык под пером писателей неучёных и неискусных быстро клонится к падению.
-                    Слова искажаются<br>
-                    <cite>А.С.Пушкин</cite>
+                <blockquote>"Прекрасный наш язык под пером писателей неучёных и неискусных быстро клонится к падению.
+                    Слова искажаются"<br>
+                    <cite>© А.С.Пушкин</cite>
                 </blockquote>
             </div>
-            <div>
-                <h4>English</h4>
+            <div class="language">
+                <h4>English <img src="Resources/UK.png" height="25px" alt="UK"></h4>
                 <p>C2 level</p>
-                <blockquote>The English language was carefully, carefully cobbled together by three blind dudes and a
-                    German dictionary<br>
-                    <cite>Dave Kellett</cite>
+                <blockquote>"The English language was carefully, carefully cobbled together by three blind dudes and a
+                    German dictionary"<br>
+                    <cite>© Dave Kellett</cite>
                 </blockquote>
             </div>
         </section>
-        <section id="hobbies">
-            <h2>Мои увлечения</h2>
-            <ul>
-                <li>Спорт
-                    <ol>
-                        <li>Футбол</li>
-                        <li>Волейбол</li>
-                        <li>Настольный теннис</li>
-                    </ol>
-                </li>
-                <li>Физика и математика (a+b)<sup>2</sup>≠a<sup>2</sup>+b<sup>2</sup></li>
-                <li>Кино</li>
-            </ul>
-        </section>
+    </section>
+    <section id="hobbies">
+        <h2>Мои увлечения</h2>
+        <ul>
+            <li>Спорт
+                <ol>
+                    <li>Футбол</li>
+                    <li>Волейбол</li>
+                    <li>Настольный теннис</li>
+                </ol>
+            </li>
+            <li>Физика и математика (a+b)<sup>2</sup>≠a<sup>2</sup>+b<sup>2</sup></li>
+            <li>Кино</li>
+        </ul>
     </section>
 </main>
 <footer>
-    <section style="float: right; width: 350px">
-        <pre>
+
+    <pre id="ascii_picture">
     _____        _____        _____
    /     \      /     \      /     \
 © <  Li   >----<   O   >----<   H   >
    \_____/      \_____/      \_____/
-        </pre>
-    </section>
+    </pre>
     <section id="contacts" style="overflow: hidden">
         <h2>Контакты</h2>
-        <ul>
-            <li><a href="https://vk.com/li_o_h">ВКонтакте</a></li>
-            <li><a href="https://tlgg.ru/Li_O_H">Telegram</a></li>
-            <li>leon25022002@gmail.com</li>
-        </ul>
+        <p><a href="https://vk.com/li_o_h"><img src="Resources/vk.png" width="15px" height="15px" alt="VK">
+            ВКонтакте</a></p>
+        <p><a href="https://tlgg.ru/Li_O_H"><img src="Resources/telegram.png" width="15px" height="15px" alt="TG">
+            Telegram</a></p>
     </section>
 </footer>
 </body>
