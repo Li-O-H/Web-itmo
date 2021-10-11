@@ -6,6 +6,7 @@
     <meta name="description" content="Рассказывает обо мне, о моих профессиональных навыках и увлечениях.">
     <meta name="keywords" content="Леон, Галстян, IT, программирование, студент">
     <link rel="stylesheet" href="CSS/my_styles.css">
+    <link rel="stylesheet" href="prettify/sunburst.css"/>
 </head>
 <body>
 <header>
@@ -62,14 +63,14 @@
             <h3>Профессиональные навыки</h3>
             <div class="hard_skill">
                 <h4>Python</h4>
-                <pre class="code"><code>
+                <pre class="prettyprint, code"><code>
 print("Hello, World!")
 </code></pre>
                 <p>Знаю неплохо, но не особо люблю</p>
             </div>
             <div class="hard_skill">
                 <h4>C++</h4>
-                <pre class="code"><code>
+                <pre class="prettyprint, code"><code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -83,7 +84,7 @@ int main()
             </div>
             <div class="hard_skill">
                 <h4>Java</h4>
-                <pre class="code"><code>
+                <pre class="prettyprint, code"><code>
 class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
@@ -153,5 +154,7 @@ class HelloWorld {
             Telegram</a></p>
     </section>
 </footer>
+<script src="prettify/prettify.js"></script>
+<script>prettyPrint();</script>
 </body>
 </html>
