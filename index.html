@@ -18,11 +18,12 @@
 </header>
 <main>
     <section id="about_me">
+        <div>
+            <p>Приветствую на моей странице!</p>
+            <p>Расскажу немного о себе. Я студент Университета ИТМО, будущий
+                программист и просто <strong>замечательный человек</strong>. Заинтересовал? Дальше - больше!</p>
+        </div>
         <img id="my_photo" src="Resources/my_photo.jpg" alt="Мое фото">
-        <p>Приветствую на моей странице!</p>
-        <p>Расскажу немного о себе. Я студент Университета ИТМО, будущий
-            программист и просто <strong>замечательный человек</strong>. Заинтересовал? Дальше - больше!</p>
-        <div style="clear: both"></div>
     </section>
     <section id="education">
         <h2>Образование</h2>
@@ -44,33 +45,19 @@
     </section>
     <section id="skills">
         <h2>Мои навыки</h2>
-        <aside id="examples">
-            <h3>Примеры работ</h3>
-            <ul>
-                <li><a href="https://github.com/Li-O-H/PaymentsCalendar">Платежный календарь</a> - программа на Python,
-                    являющаяся прослойкой между Excel-таблицами и БД postgres
-                </li>
-                <li><a href="https://github.com/itmo-java-basics-2021/Li-O-H">Key-value хранилище</a> на Java (учебный
-                    проект по Технологиям программирования)
-                </li>
-                <li><a href="https://github.com/Li-O-H/CG-G">Обработка изображений</a> на C++ (учебные проекты по
-                    Компьютерной геометрии и графике).
-                    <del>Осторожно, говнокод</del>
-                </li>
-            </ul>
-        </aside>
-        <section id="hard_skills">
-            <h3>Профессиональные навыки</h3>
-            <div class="hard_skill">
-                <h4>Python</h4>
-                <pre class="prettyprint, code"><code>
+        <div id="prof_skills">
+            <section id="hard_skills">
+                <h3>Профессиональные навыки</h3>
+                <div class="hard_skill">
+                    <h4>Python</h4>
+                    <pre class="prettyprint, code"><code>
 print("Hello, World!")
 </code></pre>
-                <p>Знаю неплохо, но не особо люблю</p>
-            </div>
-            <div class="hard_skill">
-                <h4>C++</h4>
-                <pre class="prettyprint, code"><code>
+                    <p>Знаю неплохо, но не особо люблю</p>
+                </div>
+                <div class="hard_skill">
+                    <h4>C++</h4>
+                    <pre class="prettyprint, code"><code>
 #include &lt;iostream&gt;
 using namespace std;
 
@@ -80,29 +67,45 @@ int main()
     return 0;
 }
 </code></pre>
-                <p>Знаю неплохо, не понимаю, чего его все так не любят</p>
-            </div>
-            <div class="hard_skill">
-                <h4>Java</h4>
-                <pre class="prettyprint, code"><code>
+                    <p>Знаю неплохо, не понимаю, чего его все так не любят</p>
+                </div>
+                <div class="hard_skill">
+                    <h4>Java</h4>
+                    <pre class="prettyprint, code"><code>
 class HelloWorld {
     public static void main(String[] args) {
         System.out.println("Hello, World!");
     }
 }
 </code></pre>
-                <p>Знаю похуже, однако планирую это исправлять</p>
-            </div>
-            <div class="hard_skill">
-                <h4>SQL</h4>
-                <p>Без БД не обойтись</p>
-            </div>
-            <div class="hard_skill">
-                <h4>Bash</h4>
-                <p>Работал с ним, когда проходил ОС, и впереди Администрирование Linux</p>
-            </div>
-            <br>
-        </section>
+                    <p>Знаю похуже, однако планирую это исправлять</p>
+                </div>
+                <div class="hard_skill">
+                    <h4>SQL</h4>
+                    <p>Без БД не обойтись</p>
+                </div>
+                <div class="hard_skill">
+                    <h4>Bash</h4>
+                    <p>Работал с ним, когда проходил ОС, и впереди Администрирование Linux</p>
+                </div>
+                <br>
+            </section>
+            <aside id="examples">
+                <h3>Примеры работ</h3>
+                <ul>
+                    <li><a href="https://github.com/Li-O-H/PaymentsCalendar">Платежный календарь</a> - программа на Python,
+                        являющаяся прослойкой между Excel-таблицами и БД postgres
+                    </li>
+                    <li><a href="https://github.com/itmo-java-basics-2021/Li-O-H">Key-value хранилище</a> на Java (учебный
+                        проект по Технологиям программирования)
+                    </li>
+                    <li><a href="https://github.com/Li-O-H/CG-G">Обработка изображений</a> на C++ (учебные проекты по
+                        Компьютерной геометрии и графике).
+                        <del>Осторожно, говнокод</del>
+                    </li>
+                </ul>
+            </aside>
+        </div>
         <section id="languages">
             <h3>Языки</h3>
             <div class="language">
@@ -137,6 +140,17 @@ class HelloWorld {
             <li>Кино</li>
         </ul>
     </section>
+    <table>
+        <caption>Мое расписание</caption>
+        <tr><th>Время</th><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th><th>Суббота</th></tr>
+        <tr><th>8:20 - 9:50</th><td></td><td></td><td></td><td>Иностранный язык, практика</td><td></td><td>Прикладная математика, практика (чет)</td></tr>
+        <tr><th>10:00 - 11:30</th><td></td><td></td><td></td><td>Иностранный язык, практика</td><td></td><td>Прикладная математика, практика (чет)</td></tr>
+        <tr><th>11:40 - 13:10</th><td>Машинное обучение, лекция</td><td>Физкультура (волейбол)</td><td>Web-Программирование, лекция</td><td>Иностранный язык, практика</td><td>История (лекция, чет)</td><td>Прикладная математика, лекция</td></tr>
+        <tr><th>13:30 - 15:00</th><td>Машинное обучение, практика (чет)</td><td>Физкультура (волейбол)</td><td>Web-Программирование, практика (нечет)</td><td>Администрирование в ОС Linux, лекция</td><td>История (практика, чет)</td><td>Прикладная математика, лекция</td></tr>
+        <tr><th>15:20 - 16:50</th><td>Машинное обучение, практика (чет)</td><td></td><td>Web-Программирование, практика (нечет)</td><td>Анализ и проектирование на UML, лекция</td><td></td><td></td></tr>
+        <tr><th>17:00 - 18:30</th><td></td><td></td><td>Анализ и проектирование на UML, практика (нечет)</td><td></td><td></td><td></td></tr>
+        <tr><th>18:40 - 20:10</th><td></td><td></td><td>Анализ и проектирование на UML, практика (нечет)</td><td></td><td></td><td></td></tr>
+    </table>
 </main>
 <footer>
 
