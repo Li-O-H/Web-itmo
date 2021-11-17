@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="CSS/my_styles.css">
     <link rel="stylesheet" href="prettify/sunburst.css"/>
     <link rel="icon" href="Resources/my_photo.jpg">
+    <script src="prettify/prettify.js"></script>
+    <script src="Scripts/page_load_time.js"></script>
+    <script src="Scripts/nav_active_link.js"></script>
 </head>
 <body>
 <header>
@@ -18,7 +21,7 @@
     </nav>
 </header>
 <main>
-    <section id="about_me">
+    <section id="about_me" class="navigatable">
         <div>
             <p>Приветствую на моей странице!</p>
             <p>Расскажу немного о себе. Я студент Университета ИТМО, будущий
@@ -26,7 +29,7 @@
         </div>
         <img id="my_photo" src="Resources/my_photo.jpg" alt="Мое фото">
     </section>
-    <section id="education">
+    <section id="education" class="navigatable">
         <h2>Образование</h2>
         <div>
             <h3>Среднее образование</h3>
@@ -44,7 +47,7 @@
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="navigatable">
         <h2>Мои навыки</h2>
         <div id="prof_skills">
             <section id="hard_skills">
@@ -127,7 +130,7 @@ class HelloWorld {
             </div>
         </section>
     </section>
-    <section id="hobbies">
+    <section id="hobbies" class="navigatable">
         <h2>Мои увлечения</h2>
         <ul>
             <li>Спорт
@@ -161,7 +164,7 @@ class HelloWorld {
 © <  Li   >----<   O   >----<   H   >
    \_____/      \_____/      \_____/
     </pre>
-    <section id="contacts" style="overflow: hidden">
+    <section id="contacts" class="navigatable" style="overflow: hidden">
         <h2>Контакты</h2>
         <p><a href="https://vk.com/li_o_h"><img src="Resources/vk.png" width="15px" height="15px" alt="VK">
             ВКонтакте</a></p>
@@ -169,8 +172,6 @@ class HelloWorld {
             Telegram</a></p>
     </section>
 </footer>
-<script src="prettify/prettify.js"></script>
-<script src="Scripts/page_load_time.js"></script>
 <script>prettyPrint();</script>
 </body>
 </html>

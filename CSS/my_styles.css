@@ -36,6 +36,12 @@ p, li{
     font-family: Verdana, serif;
 }
 
+.nav_link_active{
+    background: azure;
+    color: lightseagreen;
+    border-radius: 20px;
+}
+
 nav{
     background: lightseagreen;
     color: azure;
@@ -43,7 +49,7 @@ nav{
 }
 
 nav *{
-    background: lightseagreen;
+    background: inherit;
     color: inherit;
     font-size: 24px;
     text-decoration: none;
@@ -104,9 +110,10 @@ h4{
 
 a[href]:hover{
     background-color: cadetblue;
+    color: azure;
 }
 
-#about_me, #education, #skills, #hobbies, #contacts{
+.navigatable{
     scroll-margin-top: 160px;
 }
 
