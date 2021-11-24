@@ -8,17 +8,21 @@
     <link rel="stylesheet" href="CSS/my_styles.css">
     <link rel="stylesheet" href="prettify/sunburst.css"/>
     <link rel="icon" href="Resources/my_photo.jpg">
+    <script src="prettify/prettify.js"></script>
+    <script src="Scripts/page_load_time.js"></script>
+    <script src="Scripts/nav_active_link.js"></script>
 </head>
 <body>
 <header>
     <h1 id="page_title">Личная страница Леона Галстяна</h1>
     <nav>
         <a href="#about_me">&ensp;Обо мне&ensp;</a>|<a href="#education">&ensp;Образование&ensp;</a>|<a href="#skills">&ensp;Навыки&ensp;</a>|<a
-            href="#hobbies">&ensp;Увлечения&ensp;</a>|<a href="#contacts">&ensp;Контакты&ensp;</a>
+            href="#hobbies">&ensp;Увлечения&ensp;</a>|<a href="#contacts">&ensp;Контакты&ensp;</a>|<a
+            href="my%20birthday.html#BD_page">&ensp;ДР&ensp;</a>
     </nav>
 </header>
 <main>
-    <section id="about_me">
+    <section id="about_me" class="navigatable">
         <div>
             <p>Приветствую на моей странице!</p>
             <p>Расскажу немного о себе. Я студент Университета ИТМО, будущий
@@ -26,7 +30,7 @@
         </div>
         <img id="my_photo" src="Resources/my_photo.jpg" alt="Мое фото">
     </section>
-    <section id="education">
+    <section id="education" class="navigatable">
         <h2>Образование</h2>
         <div>
             <h3>Среднее образование</h3>
@@ -44,10 +48,10 @@
             </div>
         </div>
     </section>
-    <section id="skills">
+    <section id="skills" class="navigatable">
         <h2>Мои навыки</h2>
         <div id="prof_skills">
-            <section id="hard_skills">
+            <div id="hard_skills">
                 <h3>Профессиональные навыки</h3>
                 <div class="hard_skill">
                     <h4>Python</h4>
@@ -90,15 +94,15 @@ class HelloWorld {
                     <p>Работал с ним, когда проходил ОС, и впереди Администрирование Linux</p>
                 </div>
                 <br>
-            </section>
+            </div>
             <aside id="examples">
                 <h3>Примеры работ</h3>
                 <ul>
-                    <li><a href="https://github.com/Li-O-H/PaymentsCalendar">Платежный календарь</a> - программа на Python,
-                        являющаяся прослойкой между Excel-таблицами и БД postgres
+                    <li><a href="https://github.com/Li-O-H/PaymentsCalendar">Платежный календарь</a> - программа на
+                        Python, являющаяся прослойкой между Excel-таблицами и БД postgres
                     </li>
-                    <li><a href="https://github.com/itmo-java-basics-2021/Li-O-H">Key-value хранилище</a> на Java (учебный
-                        проект по Технологиям программирования)
+                    <li><a href="https://github.com/itmo-java-basics-2021/Li-O-H">Key-value хранилище</a> на Java
+                        (учебный проект по Технологиям программирования)
                     </li>
                     <li><a href="https://github.com/Li-O-H/CG-G">Обработка изображений</a> на C++ (учебные проекты по
                         Компьютерной геометрии и графике).
@@ -107,7 +111,7 @@ class HelloWorld {
                 </ul>
             </aside>
         </div>
-        <section id="languages">
+        <div id="languages">
             <h3>Языки</h3>
             <div class="language">
                 <h4>Русский <img src="Resources/RU.png" height="25px" alt="RU"></h4>
@@ -125,9 +129,9 @@ class HelloWorld {
                     <cite>© Dave Kellett</cite>
                 </blockquote>
             </div>
-        </section>
+        </div>
     </section>
-    <section id="hobbies">
+    <section id="hobbies" class="navigatable">
         <h2>Мои увлечения</h2>
         <ul>
             <li>Спорт
@@ -143,25 +147,89 @@ class HelloWorld {
     </section>
     <table>
         <caption>Мое расписание</caption>
-        <tr><th>Время</th><th>Понедельник</th><th>Вторник</th><th>Среда</th><th>Четверг</th><th>Пятница</th><th>Суббота</th></tr>
-        <tr><th>8:20 - 9:50</th><td></td><td></td><td></td><td>Иностранный язык, практика</td><td></td><td>Прикладная математика, практика (чет)</td></tr>
-        <tr><th>10:00 - 11:30</th><td></td><td></td><td></td><td>Иностранный язык, практика</td><td></td><td>Прикладная математика, практика (чет)</td></tr>
-        <tr><th>11:40 - 13:10</th><td>Машинное обучение, лекция</td><td>Физкультура (волейбол)</td><td>Web-Программирование, лекция</td><td>Иностранный язык, практика</td><td>История (лекция, чет)</td><td>Прикладная математика, лекция</td></tr>
-        <tr><th>13:30 - 15:00</th><td>Машинное обучение, практика (чет)</td><td>Физкультура (волейбол)</td><td>Web-Программирование, практика (нечет)</td><td>Администрирование в ОС Linux, лекция</td><td>История (практика, чет)</td><td>Прикладная математика, лекция</td></tr>
-        <tr><th>15:20 - 16:50</th><td>Машинное обучение, практика (чет)</td><td></td><td>Web-Программирование, практика (нечет)</td><td>Анализ и проектирование на UML, лекция</td><td></td><td></td></tr>
-        <tr><th>17:00 - 18:30</th><td></td><td></td><td>Анализ и проектирование на UML, практика (нечет)</td><td></td><td></td><td></td></tr>
-        <tr><th>18:40 - 20:10</th><td></td><td></td><td>Анализ и проектирование на UML, практика (нечет)</td><td></td><td></td><td></td></tr>
+        <tr>
+            <th>Время</th>
+            <th>Понедельник</th>
+            <th>Вторник</th>
+            <th>Среда</th>
+            <th>Четверг</th>
+            <th>Пятница</th>
+            <th>Суббота</th>
+        </tr>
+        <tr>
+            <th>8:20 - 9:50</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Иностранный язык, практика</td>
+            <td></td>
+            <td>Прикладная математика, практика (чет)</td>
+        </tr>
+        <tr>
+            <th>10:00 - 11:30</th>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Иностранный язык, практика</td>
+            <td></td>
+            <td>Прикладная математика, практика (чет)</td>
+        </tr>
+        <tr>
+            <th>11:40 - 13:10</th>
+            <td>Машинное обучение, лекция</td>
+            <td>Физкультура (волейбол)</td>
+            <td>Web-Программирование, лекция</td>
+            <td>Иностранный язык, практика</td>
+            <td>История (лекция, чет)</td>
+            <td>Прикладная математика, лекция</td>
+        </tr>
+        <tr>
+            <th>13:30 - 15:00</th>
+            <td>Машинное обучение, практика (чет)</td>
+            <td>Физкультура (волейбол)</td>
+            <td>Web-Программирование, практика (нечет)</td>
+            <td>Администрирование в ОС Linux, лекция</td>
+            <td>История (практика, чет)</td>
+            <td>Прикладная математика, лекция</td>
+        </tr>
+        <tr>
+            <th>15:20 - 16:50</th>
+            <td>Машинное обучение, практика (чет)</td>
+            <td></td>
+            <td>Web-Программирование, практика (нечет)</td>
+            <td>Анализ и проектирование на UML, лекция</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>17:00 - 18:30</th>
+            <td></td>
+            <td></td>
+            <td>Анализ и проектирование на UML, практика (нечет)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>18:40 - 20:10</th>
+            <td></td>
+            <td></td>
+            <td>Анализ и проектирование на UML, практика (нечет)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
     </table>
+    <p id="page_load_time"></p>
 </main>
 <footer>
-
     <pre id="ascii_picture">
     _____        _____        _____
    /     \      /     \      /     \
 © <  Li   >----<   O   >----<   H   >
    \_____/      \_____/      \_____/
     </pre>
-    <section id="contacts" style="overflow: hidden">
+    <section id="contacts" class="navigatable" style="overflow: hidden">
         <h2>Контакты</h2>
         <p><a href="https://vk.com/li_o_h"><img src="Resources/vk.png" width="15px" height="15px" alt="VK">
             ВКонтакте</a></p>
@@ -169,7 +237,6 @@ class HelloWorld {
             Telegram</a></p>
     </section>
 </footer>
-<script src="prettify/prettify.js"></script>
 <script>prettyPrint();</script>
 </body>
 </html>
