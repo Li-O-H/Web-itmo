@@ -2,7 +2,7 @@ window.addEventListener("load", function () {
     let navigatables = document.getElementsByClassName("navigatable")
     let links = document.querySelectorAll("nav a")
     function activeLink(){
-        let currentPosition = window.pageYOffset + window.innerHeight / 3
+        let currentPosition = document.location + window.innerHeight / 3
         let currentElement = navigatables[0]
         for (let i = 0; i < navigatables.length; ++i) {
             if (navigatables[i].offsetTop > currentPosition) {
