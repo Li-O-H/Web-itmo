@@ -6,7 +6,8 @@ window.addEventListener("load", function () {
             this.date = date;
         }
     }
-    let deadlines = JSON.parse(localStorage.getItem("deadlines"))
+    let deadlines=[]
+    // deadlines = JSON.parse(localStorage.getItem("deadlines"))
     displayDeadlines()
     let taskInput = document.getElementById("task_input");
     let dateInput = document.getElementById("date_input");
@@ -19,7 +20,7 @@ window.addEventListener("load", function () {
             let date = dateInput.value
             dateInput.value=''
             deadlines.push(new Deadline(task, date));
-            localStorage.setItem("deadlines", JSON.stringify(deadlines))
+            // localStorage.setItem("deadlines", JSON.stringify(deadlines))
             displayDeadlines()
         }
     )
@@ -47,8 +48,34 @@ window.addEventListener("load", function () {
             container.removeChild(container.firstChild);
         }
         deadlines.forEach(function (deadline, i, deadlines){
-            const newElem = document.createElement("p");
-            newElem.innerHTML=deadline.task + deadline.date.toString();
+            const newElem = document.createElement("div");
+            const leftSide = document.createElement("div");
+            const rightSide = document.createElement("div");
+            newElem.appendChild(leftSide)
+            newElem.appendChild(rightSide)
+            const number=document.createElement("p")
+            number.innerHTML=i+1
+            const task=document.createElement("p")
+            task.innerHTML=deadline.task
+            const date=document.createElement("p")
+            date.innerHTML=deadline.date
+            const deleteButton=document.createElement("button")
+            deleteButton.classList.add("deadline_delete_button")
+            deleteButton.innerHTML="X"
+            leftSide.appendChild(number)
+            leftSide.appendChild(task)
+            rightSide.appendChild(date)
+            rightSide.appendChild(deleteButton)
+            leftSide.classList.add("deadline_left")
+            rightSide.classList.add("deadline_right")
+            task.classList.add("deadline_task")
+            date.classList.add("deadline_date")
+            newElem.classList.add("deadline")
+            deleteButton.addEventListener("click", function (){
+                delete deadlines[i];
+                // localStorage.setItem("deadlines", JSON.stringify(deadlines))
+                displayDeadlines()
+            })
             container.appendChild(newElem)
         });
     }

@@ -247,6 +247,54 @@ tr:nth-child(even) td{
     width: 300px;
 }
 
+#deadlines{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.deadline_task{
+    word-break: break-all;
+}
+
+.deadline_date{
+    white-space: nowrap;
+}
+
+.deadline{
+    display: flex;
+    column-gap: 5px;
+    justify-content: space-between;
+}
+
+.deadline_left{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.deadline_right{
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+}
+
+.deadline_delete_button{
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    border: 2px solid red;
+    background: azure;
+    text-align: center;
+    color: red;
+    font-size: 14px;
+}
+
+.deadline_delete_button:hover{
+    background: red;
+    color: azure;
+}
+
 @media screen and (max-width: 600px) {
     #ascii_picture {display: none}
     #my_photo {display: none}
