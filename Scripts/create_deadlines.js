@@ -6,8 +6,8 @@ window.addEventListener("load", function () {
             this.date = date;
         }
     }
-
-    let deadlines = []
+    let deadlines = JSON.parse(localStorage.getItem("deadlines"))
+    displayDeadlines()
     let taskInput = document.getElementById("task_input");
     let dateInput = document.getElementById("date_input");
     let submit = document.getElementById("submit");
@@ -16,9 +16,10 @@ window.addEventListener("load", function () {
             event.preventDefault();
             let task = taskInput.value
             taskInput.value=''
-            dateInput.value=''
             let date = dateInput.value
+            dateInput.value=''
             deadlines.push(new Deadline(task, date));
+            localStorage.setItem("deadlines", JSON.stringify(deadlines))
             displayDeadlines()
         }
     )
