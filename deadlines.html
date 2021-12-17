@@ -9,21 +9,25 @@
     <link rel="icon" href="Resources/my_photo.jpg">
     <script src="Scripts/page_load_time.js"></script>
     <script src="Scripts/nav_active_link.js"></script>
-    <script src="Scripts/days_before_my_birthday.js"></script>
+    <script src="Scripts/create_deadlines.js"></script>
 </head>
-<body id="BD_page" class="navigatable">
+<body id="deadlines_page" class="navigatable">
 <header>
     <h1 id="page_title">Личная страница Леона Галстяна</h1>
     <nav>
         <a href="index.html#about_me">&ensp;Обо мне&ensp;</a>|<a href="index.html#education">&ensp;Образование&ensp;</a>|<a
             href="index.html#skills">&ensp;Навыки&ensp;</a>|<a href="index.html#hobbies">&ensp;Увлечения&ensp;</a>|<a
-            href="index.html#contacts">&ensp;Контакты&ensp;</a>|<a href="#BD_page">&ensp;ДР&ensp;</a>|<a href="deadlines.html#deadlines_page">&ensp;DL&ensp;</a>
+            href="index.html#contacts">&ensp;Контакты&ensp;</a>|<a href="my%20birthday.html#BD_page">&ensp;ДР&ensp;</a>|<a href="#deadlines_page">&ensp;DL&ensp;</a>
     </nav>
 </header>
 <main>
-    <p id="days_before_my_birthday"></p>
+    <form>
+        <label for="task_input">Задача</label><input id="task_input" type="text" required>
+        <label for="date_input">Дедлайн</label><input id="date_input" type="date">
+        <input id="submit" type="submit" value="Записать">
+    </form>
+    <div id="deadlines"></div>
     <p id="page_load_time"></p>
 </main>
-<script>prettyPrint();</script>
 </body>
 </html>
