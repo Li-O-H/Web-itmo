@@ -17,15 +17,21 @@
     <nav>
         <a href="index.html#about_me">&ensp;Обо мне&ensp;</a>|<a href="index.html#education">&ensp;Образование&ensp;</a>|<a
             href="index.html#skills">&ensp;Навыки&ensp;</a>|<a href="index.html#hobbies">&ensp;Увлечения&ensp;</a>|<a
-            href="index.html#contacts">&ensp;Контакты&ensp;</a>|<a href="my%20birthday.html#BD_page">&ensp;ДР&ensp;</a>|<a href="#deadlines_page">&ensp;DL&ensp;</a>
+            href="index.html#contacts">&ensp;Контакты&ensp;</a>|<a href="my%20birthday.html#BD_page">&ensp;ДР&ensp;</a>|<a
+            href="#deadlines_page">&ensp;Дедлайны&ensp;</a>
     </nav>
 </header>
 <main>
+    <p>Здесь Вы можете записать свои дедлайны</p>
     <form>
-        <label for="task_input">Задача</label><input id="task_input" type="text" required>
+        <div id="task_input_container">
+            <label for="task_input">Задача</label><textarea id="task_input" required></textarea>
+        </div>
         <label for="date_input">Дедлайн</label><input id="date_input" type="date">
-        <input id="submit" type="submit" value="Записать">
+        <br>
+        <input id="deadline_submit" type="submit" value="Записать">
     </form>
+    <h3>Ваши дедлайны:</h3>
     <div id="deadlines"></div>
     <p id="page_load_time"></p>
 </main>

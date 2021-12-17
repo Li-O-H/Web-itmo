@@ -13,7 +13,7 @@ window.addEventListener("load", function () {
     displayDeadlines()
     let taskInput = document.getElementById("task_input");
     let dateInput = document.getElementById("date_input");
-    let submit = document.getElementById("submit");
+    let submit = document.getElementById("deadline_submit");
     submit.addEventListener("click",
         function (event) {
             event.preventDefault();
@@ -73,6 +73,7 @@ window.addEventListener("load", function () {
             task.classList.add("deadline_task")
             date.classList.add("deadline_date")
             newElem.classList.add("deadline")
+            number.classList.add("deadline_number")
             deleteButton.addEventListener("click", function () {
                 deadlines.splice(i, 1);
                 localStorage.setItem("deadlines", JSON.stringify(deadlines))
