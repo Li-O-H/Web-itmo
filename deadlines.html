@@ -35,7 +35,15 @@
     <h3>Ваши дедлайны:</h3>
     <div id="deadlines"></div>
     <h3>Комментарии по работе сервиса:</h3>
-    <div id="comments"></div>
+    <div id="comments">
+        <div class="preloader">
+            <svg viewBox="-2000 -1000 4000 2000">
+                <path id="inf" d="M354-354A500 500 0 1 1 354 354L-354-354A500 500 0 1 0-354 354z"></path>
+                <use xlink:href="#inf" stroke-dasharray="1570 5143" stroke-dashoffset="6713px"></use>
+            </svg>
+            <p>Загрузка комментариев...</p>
+        </div>
+    </div>
     <p id="page_load_time"></p>
 </main>
 </body>

@@ -9,6 +9,8 @@ window.addEventListener("load", async function loadComments() {
         message.innerHTML = "Ошибка - не удалось загрузить комментарии"
         container.appendChild(message)
         return
+    } finally {
+        document.getElementsByClassName("preloader")[0].style.display="none"
     }
 
     function getRandomInRange(min, max) {
