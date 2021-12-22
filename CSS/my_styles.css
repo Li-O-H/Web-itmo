@@ -185,7 +185,7 @@ footer *{
     list-style-position: inside;
 }
 
-#examples ul li a{
+#examples ul li a, .comment_author_email{
     color: black;
     text-decoration-color: lightseagreen;
 }
@@ -346,6 +346,59 @@ tr:nth-child(even) td{
 
 .deadline:nth-child(even){
     background: #dddde8;
+}
+
+.preloader svg {
+    width: 200px;
+    fill: none;
+    stroke: azure;
+    stroke-linecap: round;
+    stroke-width: 12%
+}
+
+.preloader use {
+    stroke: lightseagreen;
+    animation: preloader-a 2s linear infinite
+}
+
+.error_message{
+    color: red;
+}
+
+#comments{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.comment{
+    background: azure;
+    border-radius: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.comment_author_name{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.comment_author_email{
+    font-style: italic;
+}
+
+.comment_author_photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    float: left;
+    margin-right: 15px;
+}
+
+@keyframes preloader-a {
+    to {
+        stroke-dashoffset: 0px
+    }
 }
 
 @media screen and (max-width: 600px) {
